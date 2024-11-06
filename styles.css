@@ -13,8 +13,10 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', serif;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navbar */
@@ -81,10 +83,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Main Content */
-main {
-    max-width: 1200px;
-    margin: 100px auto 50px;
-    padding: 0 20px;
+.main-content {
+    flex-grow: 1;
+    padding-top: 80px;
+}
+
+#home {
+    text-align: center;
+    padding: 60px 20px;
 }
 
 h2 {
@@ -94,7 +100,8 @@ h2 {
 }
 
 p {
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
 }
 
 .btn {
@@ -109,18 +116,6 @@ p {
 
 .btn:hover {
     background-color: #002244;
-}
-
-/* Forms */
-.form-group {
-    margin-bottom: 20px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 /* Footer */
