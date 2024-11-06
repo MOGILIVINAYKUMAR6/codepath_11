@@ -13,10 +13,8 @@ body {
     color: #333;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', serif;
 }
 
 /* Navbar */
@@ -83,14 +81,10 @@ body {
 }
 
 /* Main Content */
-.main-content {
-    flex-grow: 1;
-    padding-top: 80px;
-}
-
-#home {
-    text-align: center;
-    padding: 60px 20px;
+main {
+    max-width: 1200px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
 }
 
 h2 {
@@ -100,8 +94,7 @@ h2 {
 }
 
 p {
-    max-width: 800px;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .btn {
